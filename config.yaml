@@ -1,0 +1,10 @@
+credentials:
+  proxy-user: "user-1"
+  proxy-pass: "pass-1"
+  tgBotToken: "123456:bottoken"
+
+telegram:
+  chat_ids:
+    - 2343243244
+    - 2432432434
+    - 1234567890
