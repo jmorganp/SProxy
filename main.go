@@ -6,6 +6,7 @@ import (
 	"database/sql"
 	"encoding/json"
 	"errors"
+	"flag"
 	"fmt"
 	"io"
 	"log"
@@ -161,7 +162,10 @@ func main() {
 
 	cache := NewCache()
 
-	file, err := os.Open("config.yaml")
+	configPath := flag.String("config", "config.yaml", "Path to the configuration file")
+	flag.Parse()
+
+	file, err := os.Open(*configPath)
 	if err != nil {
 		log.Fatalf("Error opening YAML file: %v", err)
 	}
