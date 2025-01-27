@@ -537,8 +537,9 @@ func main() {
 
 	addr := fmt.Sprintf(":%d", PROXY_PORT)
 
-	log.Printf("Starting HTTP Proxy Server on %s...", addr)
 	log.Fatal(http.ListenAndServe(addr, proxy))
+	log.Printf("Proxy Server started on %s...", addr)
+	log.Print("Listening for incoming requests...")
 }
 
 func createTables(db *sql.DB) {
