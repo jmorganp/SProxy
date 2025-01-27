@@ -2,13 +2,11 @@
 
 ## Description
 
-A simple Reverse Proxy implementation in Golang which proxies a http client's requests via a residential proxy
-in a preferred location, whilst maintaining a proxy session for the duration of the session.
+A simple reverse proxy implementation in Golang that proxies HTTP client requests through a residential proxy in a specified location, while maintaining a persistent proxy session for the duration of the session.
 
-Proxy location is determined intelligently by parsing custom headers from the client or a config file.
-It handles multiple concurrent sessions effortlessly and is very responsive.
+The proxy location is determined intelligently by parsing custom headers from the client or reading from a configuration file. It efficiently handles multiple concurrent sessions and delivers high responsiveness.
 
-Example use-case: For a Web Scraper/Crawler for bypassing geoblocks, rate-limits etc.
+Example use case: A web scraper or crawler for bypassing geo-restrictions, rate limits etc.
 
 ---
 
