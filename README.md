@@ -30,8 +30,8 @@ Example use case: A web scraper or crawler for bypassing geo-restrictions, rate 
    - Create a `config.yaml` file in the root directory (or use the provided example `config.example.yaml`).
    - Example `config.yaml`:
      ```yaml
-     user: "your-username"
-     pass: "your-password"
+     proxy-user: "your-username"
+     proxy-pass: "your-password"
      tgBotToken: "123456789:your-telegram-bot-token"
      telegram_chat_ids:
        - 1234567890
